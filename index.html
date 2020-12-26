@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Searching now...</h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">yummy.eats</a>
+            </header>
+            <h1><span>The Healthy</span> Eating Experience</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus temporibus nostrum reiciendis, mollitia pariatur reprehenderit. Odit voluptate modi debitis ea.</p>
+            <div class="form-container">
+                <form action="#">
+                    <div class="form-left">
+                        <label for="city">Enter Your City</label>
+                        <input type="text" name="city" id="city">
+                        <p>Example: Lahore</p>
+                    </div>
+                    <input type="button" value="Find Food Now" id="cta-btn">
+                </form>
+            </div>
+        </section>
+
+    </div>
+    <section class="authentic">
+        <div class="right-col">
+            <h2>Authentic. Awesome</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quasi voluptate quam cumque facere consequuntur aliquid tempore ducimus voluptas, illo minus ipsum? Totam eos dolorum ex repudiandae harum excepturi aspernatur, quod, quidem
+                sequi, non nobis esse incidunt! Rerum, ipsam! Obcaecati?</p>
+        </div>
+        <img src="images/food.jpeg" alt="food bowl">
+    </section>
+    <script>
+        let button = document.getElementById('cta-btn');
+        let overlay = document.getElementById('overlay');
+        button.addEventListener('click', () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay')
+            setTimeout(() => {
+                overlay.style.display = 'none';
+            }, 3000);
+        })
+    </script>
+</body>
+
+</html>
